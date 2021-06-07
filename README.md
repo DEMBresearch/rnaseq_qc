@@ -31,4 +31,4 @@ Use docker for running the pipeline
 Karol Ciuchcinski & Mikolaj Dziurzynski
 
 ## License
-The software in this repository is put under an MIT licensing scheme - please see the LICENSE file for more details.
+The software in this repository is put under an MIT licensing scheme - please see the `LICENSE <https://github.com/DEMBresearch/rnaseq_qc/blob/main/LICENSE>` file for more details.
