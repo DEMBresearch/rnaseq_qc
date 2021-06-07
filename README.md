@@ -1,7 +1,7 @@
 # RNA-seq Quality Check
 
 
-##Basic RNA-seq genomic data QC pipeline
+## Basic RNA-seq genomic data QC pipeline
 
 The pipeline is written in NextFlow. It uses the following programs:
 - fastp (https://github.com/OpenGene/fastp)
