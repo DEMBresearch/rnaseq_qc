@@ -159,13 +159,12 @@ process rna_spades_assembly {
 
     output:
         path "transcripts.fasta" into spades_out_ch
-        spades_out/transcripts.fasta ${sample}_transcripts.fasta
-        cp ${sample}_transcripts.fasta ${params.transcripts}/${sample}_transcripts.fasta
 
 
     """
     rnaspades.py -t ${task.cpus} -m ${params.memory} -1 "${in_spades.get(0)}" -2 "${in_spades.get(1)}" -o spades_out
-
+    mv spades_out/transcripts.fasta ${sample}_transcripts.fasta
+    cp ${sample}_transcripts.fasta ${params.transcripts}/${sample}_transcripts.fasta
     """
 }
 
